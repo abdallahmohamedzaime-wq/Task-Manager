@@ -1,38 +1,20 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Manager</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Gestionnaire de tâches</h1>
-        
-        <!-- Formulaire d'ajout de tâche -->
-        <div class="task-form">
-            <input type="text" id="task-input" placeholder="Ajouter une nouvelle tâche...">
-            <button id="add-btn">Ajouter</button>
-        </div>
-
-        <!-- Liste des tâches -->
-        <ul id="task-list">
-            <li class="task-item">
-                <input type="checkbox" class="task-checkbox">
-                <span>Apprendre les bases de Git</span>
-            </li>
-            <li class="task-item">
-                <input type="checkbox" class="task-checkbox">
-                <span>Créer le projet task-manager</span>
-            </li>
-            <li class="task-item">
-                <input type="checkbox" class="task-checkbox">
-                <span>Tester l'application dans le navigateur</span>
-            </li>
-        </ul>
-    </div>
-
-    <script src="script.js"></script>
-</body>
+<!DOCTYPE html> 
+<html lang="fr"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Task Manager Web</title> 
+  <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+  <main class="app"> 
+    <h1>Task Manager</h1> 
+    <ul id="task-list"></ul> 
+    <form id="task-form"> 
+      <input id="task-input" type="text" placeholder="Nouvelle tâche..."> 
+      <button type="submit">+ Ajouter</button> 
+    </form> 
+  </main> 
+  <script src="script.js"></script> 
+</body> 
 </html>
